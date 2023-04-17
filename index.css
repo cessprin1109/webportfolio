@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+nav {
+	background-color: pink;
+	top:0px;
+
+  	background-clip: text;
+  	color: transparent;
+}
+.navbar-brand {
+	font-family: 'Rubik Mono One', sans-serif;
+	color: white;
+}
+#navbarNav {
+	font-family: 'Rubik Mono One', sans-serif;
+}
+
+body #landing-page {
+	background-image: url("https://coolwallpapers.me/picsup/5739499-black-mountain-wallpapers.jpg");
+	background-size:cover;
+	height: 100vh;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#landing-page {
+	text-align: center;
+	padding: auto;
+	font-family: 'Rubik Mono One', sans-serif;
+	color: white;
+	padding-bottom: 40px;
+}
+.content-1 {
+	border-radius:80% ;
+}
+#projects {
+	text-align: center;
+	
+}
+
+
+.card-title {
+	font-weight:;
+}
+
+#about-me {
+			display: flex;
+		}
+		
+		.left {
+			border-right: 2px solid black;
+			padding: 10px;
+			flex: 1;
+			background-color: #FFABAB;
+
+		}
+		
+		.right {
+			padding: 10px;
+			flex: 1;
+			background-color: white;
+
+		}
+.about {
+	font-family: 'Rubik Mono One', sans-serif;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+
+.contact-me {
+	color: black;
+	padding-bottom: 5px;
+
+	
+}
+#contacts {
+	background-color: #FCC8D1;
+	color: black;
+	padding-top: 100px;
+}
+.btn-primary {
+	background-color: pink;
+	padding: 10px;
+	color: black;
+}
+#tools {
+	padding-bottom: 5px;
+	background-color: #FEF2F4;
+}
+.Tools {
+	background-color: #FEF2F4;
+}
+
+#pre-footer {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	background-color: #D14D72;
+	color: white;
+}
+#pre-footer .cards {
+	display: inline-block;
+	min-height: 175px;
+	width: 20%;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+	color: white;
+	text-align: left;
+}
+
+/*.facebook {
+	padding: 0px;
+	width: 100px;
+	text-decoration: none;
+	margin-right:20px;
+
+}
+.facebook:hover {
+	opacity: 0.7;
+}
+.linkedin {
+	padding: 0px;
+	width: 40px;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.linkedin:hover {
+	opacity: 0.7;
+}
+.behance {
+	padding: 0px;
+	width: 45px;
+	text-decoration: none;
+}
+.behance:hover {
+	opacity: 0.7;
+}
+.instagram {
+	padding: 0px;
+	width: 60px;
+	text-decoration: none;
+}
+.instagram:hover {
+	opacity: 0.7;
+}*/
+footer {
+	padding: 0.7rem;
+	text-align: center;
+}
+/* parent -> child */
+footer span {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.cards {
+	padding-bottom: 90px;
+}
+
+/* Text Animation */
+
+.wrapper.four {
+    
+    font-size: 3rem;
+    font-family: "Play", sans-serif;
+
+
+}
+.four .type{
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+.four h3 {
+    width: 13ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
