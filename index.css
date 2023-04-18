@@ -15,30 +15,93 @@ nav {
 	color: white;
 }
 #navbarNav {
-	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 'Playfair Display', serif;
+}
+#navbarNav:hover {
+	background-color: pink;
 }
 
 body #landing-page {
-	background-image: url("https://coolwallpapers.me/picsup/5739499-black-mountain-wallpapers.jpg");
-	background-size:cover;
 	height: 100vh;
 	text-align: center;
 	padding-top: 50px;
+	background: 
+	linear-gradient(
+			 rgba(39, 33, 36, 0.8),
+			 rgba(39, 33, 36, 0.8)
+		),
+		url("https://coolwallpapers.me/picsup/5739499-black-mountain-wallpapers.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+;
 }
 
 #landing-page {
 	text-align: center;
 	padding: auto;
-	font-family: 'Rubik Mono One', sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-size: 80px;
 	color: white;
 	padding-bottom: 40px;
+}
+#landing-pic {
+	border-radius: 50px;
 }
 .content-1 {
 	border-radius:80% ;
 }
-#projects {
+#project-title {
 	text-align: center;
-	
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 32px;
+}
+#illustrations {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 32px;
+}
+#design {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 32px;
+}
+#prog {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 32px;
+}
+#p-1 {
+	text-align: justify;
+}
+#p-2 {
+	text-align: justify;
+}
+#p-3 {
+	text-align: justify;
+}
+.card-link {
+	text-align: center !important;
+}
+#core-tools{
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 32px;
+
 }
 
 
@@ -87,31 +150,8 @@ body #landing-page {
 	padding: 10px;
 	color: black;
 }
-#tools {
-	padding-bottom: 5px;
-	background-color: #FEF2F4;
-}
-.Tools {
-	background-color: #FEF2F4;
-}
 
-#pre-footer {
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 3rem;
-	padding-bottom: 1rem;
-	background-color: #D14D72;
-	color: white;
-}
-#pre-footer .cards {
-	display: inline-block;
-	min-height: 175px;
-	width: 20%;
-	margin-right: 0.5rem;
-	margin-left: 0.5rem;
-	color: white;
-	text-align: left;
-}
+
 
 /*.facebook {
 	padding: 0px;
@@ -148,15 +188,7 @@ body #landing-page {
 .instagram:hover {
 	opacity: 0.7;
 }*/
-footer {
-	padding: 0.7rem;
-	text-align: center;
-}
-/* parent -> child */
-footer span {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-}
+
 .cards {
 	padding-bottom: 90px;
 }
@@ -166,7 +198,7 @@ footer span {
 .wrapper.four {
     
     font-size: 3rem;
-    font-family: "Play", sans-serif;
+    font-family: 'Playfair Display', serif;
 
 
 }
@@ -192,4 +224,108 @@ footer span {
     50% {
         border-color: transparent;
     }
+}
+/*About Me Section*/
+#about {
+	background: pink;
+}
+#text-title {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 32px;
+	/* identical to box height, or 133% */
+	color: black;
+}
+#about p {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+	color: black;
+}
+#contact {
+	background-color: pink;
+}
+
+#contact-header {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 32px;
+	/* identical to box height, or 133% */
+	color: black;
+}
+#contact-text {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	/* or 150% */
+	color: black;
+}
+#social-header {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 32px;
+	/* identical to box height, or 133% */
+	color: black;
+}
+#contact form label {
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: hotpink !important;
+
+}
+#form-btn {
+	padding: 8px 24px;
+	gap: 8px;
+	background: hotpink;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 24px;
+	/* identical to box height, or 150% */
+	text-align: center;
+	color: black;
+
+}
+
+#pre-footer {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 32px;
+	padding-top: 20px;
+}
+
+footer {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 24px;
+	/* identical to box height, or 185% */
+
+	text-align: center;
+
+	color: black;
+	background-color: hotpink;
+
 }
