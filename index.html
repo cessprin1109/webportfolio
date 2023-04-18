@@ -6,10 +6,14 @@
 	<!-- Bootstrap Link -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+
 	<!-- Font Links -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Passion+One&family=Roboto&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet">
 
 	<title>Developer Portfolio - Capstone 1</title>
 
@@ -36,10 +40,13 @@
 		        <a class="nav-link" href="#landing-page">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
+		        <a class="nav-link" href="#about">About</a>
+		      </li>
+		      <li class="nav-item">
 		        <a class="nav-link" href="#projects">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#contacts">Contact</a>
+		        <a class="nav-link" href="#contact">Contact</a>
 		        <li class="nav-item">
 		        <a class="nav-link" href="#tools">Tools</a>
 		      </li>
@@ -58,7 +65,7 @@
 
 			<!-- Profile Section Start -->
 			<div class="container-fluid" id="landing-page"> <a href="#home"></a>
-				<img class="content-1 mt-5 mt-md-0 pb-5" width="400" src="images/pic1.PNG" >
+				<img class="content-1 mt-5 mt-md-0 pb-5" id="landing-pic" width="400" src="images/pic1.png" >
 
 				<h1> Hi! I am Princess Vecida</h1>
 				<h3> I am a Full Stack Web Developer </h3>				
@@ -66,8 +73,7 @@
 					<div class=" wrapper four">
         <div class="type">
             <h3 class="typing">Hello There!</h3>
-            <h4> Scroll down </h4>
-            <img class="bg-light" src="images/arrow.png" width="50">
+            
         </div>
     </div>
 			</div>
@@ -80,18 +86,20 @@
 			<div class="container-fluid" id="projects">
 				<a href="#projects"></a>
 				<div class=" pt-5">
-					<h2 class="p-1"> My Projects </h2>
+					<h2 id="project-title"> My Projects </h2>
 				</div>
+			</div>
 				<!-- Container for My Projects Start -->
 
 				<!-- Illustrations Card Start -->
+
 			<div class="d-lg-flex justify-content-center p-md-5" >
 				<div class="card col-xl-4 mb-5 mb-xl-0"> 
                   <div class="card-body">
                     <img src="images/artwork-1.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-title mt-3 ">Illustrations</h5>
-                    <h6 class="card-subtitle text-muted mb-2">Artworks and Illustrations</h6>
-                    <p class="card-text">This consists all of my artworks and digital illustrations.</p>
+                    <h5 class="card-title mt-3 " id="illustrations">Illustrations</h5>
+                    <h6 class="card-subtitle text-muted mb-2" id="h-1">Artworks and Illustrations</h6>
+                    <p class="card-text" id="p-1">This consists all of my artworks and digital illustrations.</p>
                     <a href="https://www.behance.net/princessvecida" class="card-link" target="_blank">Go</a>
                   </div>
                 </div>
@@ -101,9 +109,9 @@
            	<div class="card col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5"> 
                   <div class="card-body">
                     <img src="images/ui-ux.png" class="card-img-top" alt="...">
-                    <h5 class="card-title mt-3">UI UX Design </h5>
-                    <h6 class="card-subtitle text-muted mb-2">Design and Implementation</h6>
-                    <p class="card-text">This consists all of my ui ux design.</p>
+                    <h5 class="card-title mt-3" id="design">UI UX Design </h5>
+                    <h6 class="card-subtitle text-muted mb-2" id="h-2">Design and Implementation</h6>
+                    <p class="card-text" id="p-2">This consists all of my ui ux design.</p>
                     <a href="https://www.behance.net/princessvecida" class="card-link" target="_blank">Go</a>
                   </div>
                 </div>
@@ -113,9 +121,9 @@
             <div class="card col-xl-4 mb-5 mb-xl-0"> 
                   <div class="card-body">
                     <img src="images/programming.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-title mt-3">Programming</h5>
-                    <h6 class="card-subtitle text-muted mb-2">Programming Languages</h6>
-                    <p class="card-text">This consists all of my programming languages that I am knowledgeable about.</p>
+                    <h5 class="card-title mt-3" id="prog">Programming</h5>
+                    <h6 class="card-subtitle text-muted mb-2" id="h-3">Programming Languages</h6>
+                    <p class="card-text" id="p-3">This consists all of my programming languages that I am knowledgeable about.</p>
                     <a href="https://html.com/" class="card-link" target="_blank">Go</a> 
                   </div>
                 </div>
@@ -127,31 +135,32 @@
 
 
 					<!-- About Me Section Start -->
+			<div class="container-fluid py-md-5" id="about">
+				<a href="#about"></a>
+				<div class="row justify-content-center py-md-5 my-md-5">
+					<div class="col-md-3 my-5  my-md-0">
+						<!-- image -->
+						<img src="./images/gradpic.jpg" class="img-fluid">
+					</div>
+					<div class="col-md-7">
+						<!-- Text -->
+						<h4 id="text-title" class="mt-md-5 my-5"> Hi! I am Princess Julia Vecida.</h4>
+						<p> I am a fresh graduate from FEU Institute of Technology with the degree of Bachelor of Science in Information Technology with Specialization in Digital Arts. </p>
+						<p> I'm gregarious, committed, and open-minded. I communicate well with others and am flexible when things change. I think that a person should constantly endeavor to improve their professional skills and learn new things. I am currently exploring for new professional opportunities. </p>
 
 
-			<!-- <div class=""> 
-					<h2>About Me </h2>  
-				<div class="container-fluid pt-5 min-vh-100  " id="about-me">
-					<a href="#about-me"></a>
-				<div class="left">
-
-					<h2 class="about"> What I am all about</h2>
-					<p> I am Princess Julia Vecida, I studied at FEU Institute of Technology with the degree of Bachelor of Science in Information Technology with Specialization in Digital Arts .</p>
-				</div>
-				<div class="right">
-					
-					<img src="images/cat.png " width="800">
-				</div>
-			</div> -->
-		
+					</div>	
+				</div>		
+			</div>		
 
 					 <!-- Tools Section Start -->
             <div class="Tools">
-
+            	<a href="#tools"></a>
                 <!-- Core Tools Section Start -->
-                <h3 class="pt-5" id="tools">Tools</h3>
-                <a href="#tools"></a>
-                <div>
+                <h3 class="pt-5" id="core-tools">Tools</h3>
+                
+                <div class="my-5">
+
                     <div class="justify-content-center d-flex">
                         <img width="150" src="images/logo-html5.png"/>
                     </div>
@@ -162,33 +171,55 @@
                 </div>
                 <!-- Core Tools Section End -->
                 
-                <!-- Other Tools Section Start -->
-                <h3>Other Tools</h3>
-
-                <div class="p-3 d-flex justify-content-center align-items-center flex-column">
-                    <div>
-                        <img width="150" src="images/logo-mongodb.png"/>
-                        <img width="150" src="images/logo-nodejs.png"/>
-                        <img width="150" src="images/logo-expressjs.png"/>
-                        <img width="150" src="images/logo-react.png"/>
-                        <img width="150" src="images/logo-heroku.png"/>
-                    </div>
-                    <div class="mt-3">
-                        <img width="150" src="images/logo-git.png"/>
-                        <img width="150" src="images/logo-sublime-text-3.png"/>
-                        <img width="150" src="images/logo-postman.png"/>
-                        <img width="150" src="images/logo-gitlab-ci-cd.png"/>
-                    </div>
-                </div>
-                <!-- Other Tools Section End -->
-                
             </div>
             <!-- Tools Section End -->
 
 
 		 <!-- Contact Form Section Start -->
+		 <div class="container-fluid" id="contact">
+
+	 	<div class="row">
+	 		<div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center py-5 py-md-0" id="contact-image">
+	 			<a href="#contact"></a>
+	 			<!-- social media images section -->
+	 			
+	 			<div class="col-12 mt-5 pt-1 d-flex justify-content-center align-items-center">
+	 				<h4 id="social-header"> Contact Me </h4>
+	 				
+	 				<div class="row">
+	 					
+	 				</div>
+	 			</div>
+	 		</div>
+
+	 		<div class="col-md-6 p-5">
+	 			<!-- contact form section -->
+	 			<h2 id="contact-header" class="pt-5 pb-3"> Let us get in Touch!</h2>
+	 			<p id="contact-text">
+	 				Let us get to know each other by contacting me.
+	 			</p>
+	 			<form class="mt-3">
+	 			  <div class="form-group my-4">
+	 			    <label for="exampleFormControlInput1">Name</label>
+	 			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Name">
+	 			  </div>
+	 			  <div class="form-group my-4">
+	 			    <label for="exampleFormControlInput1">Email</label>
+	 			    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email">
+	 			  </div>
+	 			  <div class="form-group my-4">
+	 			    <label for="exampleFormControlTextarea1">Message</label>
+	 			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+	 			  </div>
+	 			  <div class="my-5 d-flex justify-content-end ">
+	 			  	<button id="form-btn" class="btn">Submit</button>
+	 			  </div>
+	 			</form>
+	 		 </div>
+	 	</div>
+	 </div>
             
-            <div class=" text-light min-vh-100 p-3" >
+           <!--  <div class=" text-light min-vh-100 p-3" >
             	<a href="#contacts"></a>
               <h2 class="contact-me mb-3"> Contact Me </h2>
             <div class=" p-3 rounded" id="contacts">
@@ -210,16 +241,17 @@
                <button type="submit" class="btn btn-light">Send</button>
              </form>
                 </div>
-          </div>
+          </div> -->
 
           <!-- Footer Section Start -->
 
       <section id="pre-footer">
       
-      	<div class="cards">
+      	<div class="cards" id="social">
 
 
-      		<h3> Follow Me </h3>
+      		<h3> Follow Me On: </h3>
+      		
       		<a href="https://www.facebook.com/princessjulia.vecida" target="_blank">
       			<ion-icon name="logo-facebook"></ion-icon>
       		</a>
@@ -238,15 +270,10 @@
       		<!-- <img  class="instagram pt-3" src="images/ig.png"> -->
 
       	</div>
-      	<footer>
-            <!-- Creates an inline element -->
-            <span>Terms of Service</span>
-            <span>|</span>
-            <span>Privacy Policy</span>
-            <span>|</span>
-            <span>&copy; 2023-2030 Vecida. All Rights Reserved</span>
-        </footer>
-      </section>
+      	<!-- Footer Section Start -->
+      	<footer class="py-3">
+		&copy All Rights Reserved 2023
+		</footer>
 
 
           <!-- Footer Section End -->
